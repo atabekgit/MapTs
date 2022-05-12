@@ -136981,10 +136981,8 @@ var CustomMap_1 = require("./CustomMap");
 
 var user = new user_1.User();
 var company = new Company_1.Company();
-console.log(company);
 var customMap = new CustomMap_1.CustomMap('maps');
-customMap.addUserMarker(user);
-customMap.addCompanyMarker(company);
+customMap.addMarker(user && company);
 },{"./user":"src/user.ts","./Company":"src/Company.ts","./CustomMap":"src/CustomMap.ts"}],"../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -137013,7 +137011,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55235" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54009" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
